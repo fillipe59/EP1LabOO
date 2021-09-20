@@ -14,7 +14,7 @@ class Fila
         Fila(int tamanho);
         ~Fila();
 
-        bool enqueue(Datagrama* d); //adiciona um datagram a o fim da fila
+        bool enqueue(Datagrama* d); //adiciona um datagrama ao fim da fila
         Datagrama* dequeue(); //retira um datagrma do inicio da fila
         bool isEmpty(); //indica se a fila esta vazia
         int getSize(); //retorna o tamanho da fila
@@ -22,7 +22,7 @@ class Fila
         void imprimir(); //imprime os datagramas da fila em ordem
 
     private:
-        int tamanho; //tamanho do vetor de dtagramas
+        int tamanho; //tamanho do vetor de datagramas
         int inicio; //indica de qual posicao sera retirado o proximo datagrama
         int fim; //indica em q posicao o proximo datagrama sera adicionado
         int contador; //tamanho da fila
