@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1631824338 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\datagrama.cpp
+	<string>
+	"Datagrama.h"
+	<iostream>
+
+1631824484 c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\datagrama.h
+	<string>
+	<iostream>
+
+1631829634 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\main.cpp
+	"Datagrama.h"
+	"Fila.h"
+	<string>
+	<iostream>
+
+1631824823 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\agendador.cpp
+
+1631824827 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\evento.cpp
+
+1631897113 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\fila.cpp
+	<string>
+	<iostream>
+	"Fila.h"
+	"Datagrama.h"
+
+1631824836 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\rede.cpp
+
+1631824838 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\roteador.cpp
+
+1631824840 source:c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\tabeladerepasse.cpp
+
+1631828798 c:\users\filli\onedrive\햞ea de trabalho\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\fila.h
+	"Datagrama.h"
+	<string>
+	<iostream>
+
+1631824823 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\agendador.cpp
+
+1631824338 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\datagrama.cpp
+	<string>
+	"Datagrama.h"
+	<iostream>
+
+1631904137 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\datagrama.h
+	<string>
+	<iostream>
+
+1631824827 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\evento.cpp
+
+1631903973 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\fila.cpp
+	<string>
+	<iostream>
+	"Fila.h"
+	"Datagrama.h"
+
+1631904138 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\fila.h
+	"Datagrama.h"
+	<string>
+	<iostream>
+
+1631903511 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\main.cpp
+	"Datagrama.h"
+	"Fila.h"
+	<string>
+	<iostream>
+
+1631824836 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\rede.cpp
+
+1631824838 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\roteador.cpp
+
+1631824840 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\tabeladerepasse.cpp
+
+1631824823 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\agendador.cpp
+
+1631824338 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\datagrama.cpp
+	<string>
+	"Datagrama.h"
+	<iostream>
+
+1631904137 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\datagrama.h
+	<string>
+	<iostream>
+
+1631824827 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\evento.cpp
+
+1631903973 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\fila.cpp
+	<string>
+	<iostream>
+	"Fila.h"
+	"Datagrama.h"
+
+1631904138 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\fila.h
+	"Datagrama.h"
+	<string>
+	<iostream>
+
+1631824836 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\rede.cpp
+
+1631824838 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\roteador.cpp
+
+1631824840 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\tabeladerepasse.cpp
+
