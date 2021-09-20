@@ -24,7 +24,7 @@ bool Fila::enqueue(Datagrama* d) {
     else {
         vetorDatagramas[fim] = d;
 
-        if (fim  == tamanho - 1) fim = 0; //garante que a fila é circular
+        if (fim  == tamanho - 1) fim = 0; //garante que a fila eh circular
         else fim += 1;
 
         contador += 1;
@@ -55,9 +55,9 @@ int Fila::getSize() {
 void Fila::imprimir() {
     if (isEmpty() == true) cout << "Fila vazia" << endl;
     else {
-        if (inicio < fim) for (int i = inicio; i % tamanho < fim; i++) vetorDatagramas[i]->imprimir(); //varre do incio ao fima da fila
+        if (inicio < fim) for (int i = inicio; i % tamanho < fim; i++) vetorDatagramas[i]->imprimir(); //varre do incio ao fim da fila
         else {
-            for (int i = inicio; i < tamanho; i++) vetorDatagramas[i]->imprimir(); //varre do inicio  da fila ao fim do vetor
+            for (int i = inicio; i < tamanho; i++) vetorDatagramas[i]->imprimir(); //varre do inicio da fila ao fim do vetor
             for (int i = 0; i < fim; i++) vetorDatagramas[i]->imprimir(); //varre do inicio do vetor ao fim da fila
         }
     }
