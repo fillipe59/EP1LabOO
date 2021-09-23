@@ -22,8 +22,7 @@ class Evento
         void imprimir();
     private:
         int instante;
-        Roteador* roteadorDestino;
-        Datagrama* d;
+        Rotea
 };
 
 #endif // EVENTO_H
