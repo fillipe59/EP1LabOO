@@ -1,6 +1,9 @@
-/*#ifndef REDE_H
+#ifndef REDE_H
 #define REDE_H
+#include "Roteador.h"
+#include <iostream>
 
+using namespace std;
 
 class Rede
 {
@@ -16,7 +19,10 @@ class Rede
 
         void imprimir();
     private:
+        int tamanho;
+        int quantidade;
+        Roteador **roteadores;
 };
 
 #endif // REDE_H
-*/
+
