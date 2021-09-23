@@ -1,6 +1,11 @@
-/*#ifndef TABELADEREPASSE_H
+#ifndef TABELADEREPASSE_H
 #define TABELADEREPASSE_H
+#include "Roteador.h"
+#include <iostream>
 
+using namespace std;
+
+class Roteador;
 
 class TabelaDeRepasse
 {
@@ -19,7 +24,14 @@ class TabelaDeRepasse
         void imprimir();
 
     private:
+        int tamanho;
+        Roteador* roteadorPadrao;
+        int atrasoPadrao;
+        int* enderecosDeDestino;
+        Roteador** roteadoresAdjacentes;
+        int* atrasos;
+        int posicaoVazia;
 };
 
 #endif // TABELADEREPASSE_H
-*/
+

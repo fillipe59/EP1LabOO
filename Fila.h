@@ -8,8 +8,7 @@ using namespace std;
 #define FILA_H
 
 
-class Fila
-{
+class Fila {
     public:
         Fila(int tamanho);
         ~Fila();

@@ -1,4 +1,4 @@
-/*#include "Evento.h"
+#include "Evento.h"
 
 Evento::Evento(int instante, Roteador* destino, Datagrama* d)
 {
@@ -29,4 +29,4 @@ void Evento::imprimir()
 {
 
 }
-*/
+

@@ -1,6 +1,13 @@
-/*#ifndef EVENTO_H
+#ifndef EVENTO_H
 #define EVENTO_H
+#include "Datagrama.h"
+#include "Roteador.h"
+#include <iostream>
 
+using namespace std;
+
+class Datagrama;
+class Roteador;
 
 class Evento
 {
@@ -17,4 +24,4 @@ class Evento
 };
 
 #endif // EVENTO_H
-*/
+
