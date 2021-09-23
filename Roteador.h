@@ -28,8 +28,8 @@ class Roteador {
 
     private:
         int endereco;
-        TabelaDeRepasse* tabelaHash;
-        Fila* filaDeEventos;
+        TabelaDeRepasse* tabelaDoRoteador;
+        Fila* filaDeDatagramas;
 };
 
 #endif // ROTEADOR_H

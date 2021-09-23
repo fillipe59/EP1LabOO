@@ -52,8 +52,13 @@ Roteador* TabelaDeRepasse::getProximoSalto(int endereco, int& atraso) {
 
 }
 
-void TabelaDeRepasse::imprimir()
-{
-
+void TabelaDeRepasse::imprimir() {
+    cout << "Quantidade de Adjacentes: " << posicaoVazia << endl;
+    cout << "\n";
+    for (int i = 0; i < posicaoVazia; i++) {
+        cout << "Posicao: " << i + 1 << endl;
+        cout << "   Endereco: " << enderecosDeDestino << endl;
+        cout << "   Roteador: " << enderecosDeDestino << endl;
+    }
 }
 

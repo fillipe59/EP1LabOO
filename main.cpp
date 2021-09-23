@@ -32,6 +32,6 @@ void testeFila() {
 
 int main() {
     //testeDatagrama();
-    testeFila();
+    //testeFila();
     return 0;
 }

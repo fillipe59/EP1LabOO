@@ -1,13 +1,9 @@
 #include "Evento.h"
 
 Evento::Evento(int instante, Roteador* destino, Datagrama* d) :
-instante(instante), roteadorDestino(destino), d(d) {
+instante(instante), roteadorDestino(destino), d(d) {}
 
-
-}
-
-Evento::~Evento()
-{
+Evento::~Evento() {
     //dtor
 }
 
