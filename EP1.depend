@@ -96,7 +96,8 @@
 	<string>
 	<iostream>
 
-1632420158 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\rede.cpp
+1632431729 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\rede.cpp
+	"Rede.h"
 
 1632429117 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\roteador.cpp
 	"Roteador.h"
@@ -180,4 +181,8 @@
 
 1632425059 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Evento.cpp
 	"Evento.h"
+
+1632431709 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\rede.h
+	"Roteador.h"
+	<iostream>
 
