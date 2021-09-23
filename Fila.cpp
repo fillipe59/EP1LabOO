@@ -15,8 +15,18 @@ Fila::Fila(int tamanho) : tamanho(tamanho) {
 }
 
 Fila::~Fila() {
+    if (inicio < fim) {
+        for (int i = inicio; i < fim; i++)
+            delete vetorDatagramas[i];//varre do incio ao fim da fila
+    }
+    else {
+        for (int i = inicio; i < tamanho; i++)
+            delete vetorDatagramas[i]; //varre do inicio da fila ao fim do vetor
+        for (int i = 0; i < fim; i++)
+            delete vetorDatagramas[i];
+
     delete[] vetorDatagramas;
-    //Destruir datagramas tambem?
+
 }
 
 bool Fila::enqueue(Datagrama* d) {
