@@ -24,7 +24,7 @@ Fila::~Fila() {
             delete vetorDatagramas[i]; //varre do inicio da fila ao fim do vetor
         for (int i = 0; i < fim; i++)
             delete vetorDatagramas[i];
-
+    }
     delete[] vetorDatagramas;
 
 }
