@@ -4,17 +4,12 @@ TabelaDeRepasse::TabelaDeRepasse(int tamanho) : tamanho(tamanho) {
     posicaoVazia = 0;
     roteadorPadrao = NULL;
     atrasoPadrao = 0;
-    enderecosDeDestino = new int [tamanho];
-    atrasos = new int [tamanho];
-    roteadoresAdjacentes = new Roteador*[tamanho];
-
+    
 }
 
 TabelaDeRepasse::~TabelaDeRepasse()
 {
-    delete [] enderecosDeDestino;
-    delete [] atrasos;
-    delete [] enderecosDeDestino;
+    //dtor
 }
 
 bool TabelaDeRepasse::mapear(int endereco, Roteador* adjacente, int atraso) {
