@@ -9,7 +9,6 @@
 using namespace std;
 
 int main() {
-    int comando = 4;
 
     Rede *rede = new Rede (6);
     Agendador *agendador = new Agendador(1, rede, 10);
@@ -49,7 +48,12 @@ int main() {
     int instante;
     int enderecoDestino;
     string mensagem;
-    while (comando =! 0){
+
+    int qtdDeTempo;
+
+    int comando = 4;
+
+    while (comando != 0){
         cout<< "Simulador de Rede" << endl;
         cout<< "1) Enviar um datagrama" << endl;
         cout<< "2) Passar tempo" << endl;
@@ -80,9 +84,21 @@ int main() {
 
             if (enderecoOrigem < 0 || enderecoOrigem > 6)
                 cout <<  "Erro: origem desconhecida" << endl;
-            if (!agendador-> agendar())
+            if (!agendador-> agendar(instante, rede->getRoteador(enderecoDestino) , datagrama))
+                cout << "Erro: Sem espaco para agendar o evento" <<  endl;
 
+        }
 
+        if (comando == 2){
+            cout << "Quantidade de tempo:";
+            cin >> qtdDeTempo;
+            cout << endl;
+
+            for (int tempo = 1; tempo <= qtdDeTempo; tempo++){
+                cout << "Instante " << agendador->getInstante() << endl;
+                cout  << "---"<< endl;
+                //agendador->processar();
+            }
         }
 
     }
