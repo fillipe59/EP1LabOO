@@ -4,6 +4,7 @@ Agendador::Agendador(int instanteInicial, Rede* rede, int tamanho) :
 instanteAtual(instanteInicial), rede(rede), tamanho(tamanho) {
     eventosAgendados = new Evento*[tamanho];
     quantidade = 0;
+    InstanteAtual 
 }
 
 Agendador::~Agendador() {

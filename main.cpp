@@ -97,7 +97,7 @@ int main() {
             for (int tempo = 1; tempo <= qtdDeTempo; tempo++){
                 cout << "Instante " << agendador->getInstante() << endl;
                 cout  << "---"<< endl;
-                //agendador->processar();
+                agendador->processar();
             }
         }
 
