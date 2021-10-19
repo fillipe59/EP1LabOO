@@ -22,7 +22,9 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
     }
 }
 
-void Agendador::processar()
+void Agendador::processar(){
+
+    cout << "chamou" ;
     for (int i = quantidade - 1; i >= 0 ; i--) {
         if (instanteAtual == eventosAgendados[i]->getInstante()) {
             eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama());
@@ -33,7 +35,7 @@ void Agendador::processar()
 
 
 
-    Evento *nullOuEvento = NLL;
+    Evento *nullOuEvento = NULL;
     for (int i = 0; i < rede->getQuantidade(); i++){
         nullOuEvento = rede->getRoteadores()[i]->processar(instanteAtual);
         if (nullOuEvento != NULL){

@@ -23,6 +23,8 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
 }
 
 void Agendador::processar(){
+
+    cout << chamou;
     for (int i = quantidade - 1; i >= 0 ; i--) {
         if (instanteAtual == eventosAgendados[i]->getInstante()) {
             eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama());
