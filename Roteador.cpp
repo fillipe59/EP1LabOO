@@ -34,7 +34,6 @@ Evento* Roteador::processar(int instante) {
         return NULL;
     else {
         cout << "Roteador " << endereco << endl;
-        cout << "\n";
         Datagrama* dtRetirado = filaDeDatagramas->dequeue();
         if (dtRetirado->getDestino() == endereco) {
             cout << "\tRecebido: " << dtRetirado->getDado() << endl;
@@ -51,7 +50,8 @@ Evento* Roteador::processar(int instante) {
                 return NULL;
             }
             else {
-                cout << "\tRepassado para " << proximoRoteador->getEndereco() << " (instante " << instante + atraso << "): " << dtRetirado->getDado() << endl;
+                cout << "\tRepassado para " << proximoRoteador->getEndereco() << " (instante " << instante + atraso << "): ";
+                cout << "Origem: " << dtRetirado->getOrigem() << " Destino: " << dtRetirado->getDestino() << ", " << dtRetirado->getDado() << endl;
                 Evento* evento = new Evento(instante + atraso, proximoRoteador, dtRetirado);
                 return evento;
             }

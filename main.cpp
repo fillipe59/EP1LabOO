@@ -51,7 +51,7 @@ int main() {
 
     int qtdDeTempo;
 
-    int comando = 4;
+    int comando;
 
     while (comando != 0){
         cout<< "Simulador de Rede" << endl;
@@ -80,13 +80,10 @@ int main() {
             cin >>  mensagem;
             cout << endl;
 
-            Datagrama *datagrama = new Datagrama(enderecoOrigem, enderecoDestino, mensagem);
-
             if (enderecoOrigem < 0 || enderecoOrigem > 6)
                 cout <<  "Erro: origem desconhecida" << endl;
-            if (!agendador-> agendar(instante, rede->getRoteador(enderecoDestino) , datagrama))
+            if (!agendador->agendar(instante, rede->getRoteador(enderecoOrigem), new Datagrama(enderecoOrigem, enderecoDestino, mensagem)))
                 cout << "Erro: Sem espaco para agendar o evento" <<  endl;
-
         }
 
         if (comando == 2){

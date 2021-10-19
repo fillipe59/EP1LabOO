@@ -10,8 +10,7 @@ TabelaDeRepasse::TabelaDeRepasse(int tamanho) : tamanho(tamanho) {
 
 }
 
-TabelaDeRepasse::~TabelaDeRepasse()
-{
+TabelaDeRepasse::~TabelaDeRepasse() {
     delete [] enderecosDeDestino;
     delete [] atrasos;
     delete [] roteadoresAdjacentes;

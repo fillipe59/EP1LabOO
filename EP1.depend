@@ -71,7 +71,8 @@
 
 1631824840 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1\tabeladerepasse.cpp
 
-1632420163 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\agendador.cpp
+1634609314 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\agendador.cpp
+	"Agendador.h"
 
 1632430067 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\datagrama.cpp
 	<string>
@@ -99,15 +100,18 @@
 1632431729 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\rede.cpp
 	"Rede.h"
 
-1632429117 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\roteador.cpp
+1634605545 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\roteador.cpp
 	"Roteador.h"
 
-1632425848 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\tabeladerepasse.cpp
+1634504275 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\tabeladerepasse.cpp
 	"TabelaDeRepasse.h"
 
-1632425563 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\main.cpp
+1634609968 source:d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\main.cpp
+	"Agendador.h"
 	"Datagrama.h"
-	"Fila.h"
+	"Rede.h"
+	"Roteador.h"
+	"TabelaDeRepasse.h"
 	<string>
 	<iostream>
 
@@ -127,7 +131,7 @@
 	"Roteador.h"
 	<iostream>
 
-1634602333 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Agendador.cpp
+1634493968 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Agendador.cpp
 	"Agendador.h"
 
 1634493968 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Datagrama.cpp
@@ -150,7 +154,7 @@
 	<string>
 	<iostream>
 
-1634501067 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/main.cpp
+1634500690 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/main.cpp
 	"Agendador.h"
 	"Datagrama.h"
 	"Rede.h"
@@ -162,7 +166,7 @@
 1634493968 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Rede.cpp
 	"Rede.h"
 
-1634602523 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Roteador.cpp
+1634493968 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Roteador.cpp
 	"Roteador.h"
 
 1634493968 /Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Roteador.h
@@ -181,7 +185,7 @@
 	"Roteador.h"
 	<iostream>
 
-1634504278 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/TabelaDeRepasse.cpp
+1634497455 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/TabelaDeRepasse.cpp
 	"TabelaDeRepasse.h"
 
 1634493968 source:/Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Evento.cpp
@@ -199,6 +203,13 @@
 	<iostream>
 
 1634493968 /Users/luizeduardosantos/Documents/Poli/PCS3111/EP1LabOO/Rede.h
+	"Roteador.h"
+	<iostream>
+
+1632433639 d:\fillipe_data\documents\usp\poli_usp_docs\semestre6\laboo\ep1\ep1laboo\agendador.h
+	"Rede.h"
+	"Datagrama.h"
+	"Evento.h"
 	"Roteador.h"
 	<iostream>
 
