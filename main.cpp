@@ -54,6 +54,7 @@ int main() {
     int comando = 4;
 
     while (comando != 0){
+
         cout<< "Simulador de Rede" << endl;
         cout<< "1) Enviar um datagrama" << endl;
         cout<< "2) Passar tempo" << endl;
@@ -100,5 +101,6 @@ int main() {
             }
         }
     }
+
     return 0;
 }

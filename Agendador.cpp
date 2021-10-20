@@ -23,24 +23,16 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
 }
 
 void Agendador::processar(){
-    int posicoesDeletadas[quantidade];
-
     int eventosApagados = 0;
-    for (int i = 0; i < quantidade ; i++) {
-        if (instanteAtual == eventosAgendados[i]->getInstante()) {
+    for (int i = 0; i < tamanho ; i++) {
+        if (!eventosAgendados[i] == NULL) {
+            if (instanteAtual == eventosAgendados[i]->getInstante()) {
             eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama());
             delete eventosAgendados[i];
-
-            posicoesDeletadas[eventosApagados] = i;
-            eventosApagados ++;
+            eventosAgendados[i] = NULL;
+            quantidade--;
+            }
         }
-    }
-    quantidade = quantidade - eventosApagados;
-
-    for (int i = 0; i < eventosApagados; i++){
-        for (int u = posicoesDeletadas[i]; u < quantidade + eventosApagados; u++)
-            if (u+1 < tamanho)
-                eventosAgendados[u] = eventosAgendados[u+1];
     }
 
     Evento *nullOuEvento = NULL;
