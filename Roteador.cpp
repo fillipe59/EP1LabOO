@@ -30,11 +30,14 @@ void Roteador::receber(Datagrama* d) {
 }
 
 Evento* Roteador::processar(int instante) {
+    Datagrama* dtRetirado;
+
     if (filaDeDatagramas->isEmpty() == true)
         return NULL;
     else {
         cout << "Roteador " << endereco << endl;
-        Datagrama* dtRetirado = filaDeDatagramas->dequeue();
+
+        dtRetirado = filaDeDatagramas->dequeue();
         if (dtRetirado->getDestino() == endereco) {
             cout << "\tRecebido: " << dtRetirado->getDado() << endl;
             delete dtRetirado;

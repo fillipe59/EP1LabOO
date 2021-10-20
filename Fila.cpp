@@ -34,13 +34,13 @@ bool Fila::enqueue(Datagrama* d) {
         return false;
     else {
         vetorDatagramas[fim] = d;
+        contador += 1;
 
         if (fim  == tamanho - 1)
             fim = 0; //garante que a fila eh circular
         else
             fim += 1;
 
-        contador += 1;
         return true;
     }
 }

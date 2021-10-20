@@ -51,7 +51,7 @@ int main() {
 
     int qtdDeTempo;
 
-    int comando;
+    int comando = 4;
 
     while (comando != 0){
         cout<< "Simulador de Rede" << endl;
