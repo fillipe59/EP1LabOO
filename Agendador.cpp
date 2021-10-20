@@ -13,7 +13,7 @@ Agendador::~Agendador() {
 }
 
 bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
-    if (quantidade == tamanho)
+    if (quantidade >= tamanho)
         return false;
     else {
         eventosAgendados[quantidade] = new Evento(instante, r, d);
@@ -39,7 +39,8 @@ void Agendador::processar(){
 
     for (int i = 0; i < eventosApagados; i++){
         for (int u = posicoesDeletadas[i]; u < quantidade + eventosApagados; u++)
-            eventosAgendados[u] = eventosAgendados[u+1];
+            if (u+1 < tamanho)
+                eventosAgendados[u] = eventosAgendados[u+1];
     }
 
     Evento *nullOuEvento = NULL;

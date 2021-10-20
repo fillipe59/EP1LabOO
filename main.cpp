@@ -58,36 +58,37 @@ int main() {
         cout<< "1) Enviar um datagrama" << endl;
         cout<< "2) Passar tempo" << endl;
         cout<< "0) Sair" << endl;
-        cout<< "Escolha uma opcao:";
+        cout<< "Escolha uma opcao: ";
 
         cin >> comando;
         cout << endl;
 
         if (comando == 1){
-            cout << "Endereco do roteador de origem:";
+            cout << "Endereco do roteador de origem: ";
             cin >>  enderecoOrigem;
-            cout << endl;
 
-            cout << "Instante:";
+            cout << "Instante: ";
             cin >>  instante;
-            cout << endl;
 
-            cout << "Endereco de destino:";
+            cout << "Endereco de destino: ";
             cin >>  enderecoDestino;
-            cout << endl;
 
-            cout << "Mensagem:";
+            cout << "Mensagem: ";
             cin >>  mensagem;
             cout << endl;
 
-            if (enderecoOrigem < 0 || enderecoOrigem > 6)
+            if (enderecoOrigem < 0 || enderecoOrigem > 6) {
                 cout <<  "Erro: origem desconhecida" << endl;
-            if (!agendador->agendar(instante, rede->getRoteador(enderecoOrigem), new Datagrama(enderecoOrigem, enderecoDestino, mensagem)))
+                cout << endl;
+            }
+            if (!agendador->agendar(instante, rede->getRoteador(enderecoOrigem), new Datagrama(enderecoOrigem, enderecoDestino, mensagem))) {
                 cout << "Erro: Sem espaco para agendar o evento" <<  endl;
+                cout << endl;
+            }
         }
 
         if (comando == 2){
-            cout << "Quantidade de tempo:";
+            cout << "Quantidade de tempo: ";
             cin >> qtdDeTempo;
             cout << endl;
 
@@ -95,10 +96,9 @@ int main() {
                 cout << "Instante " << agendador->getInstante() << endl;
                 cout  << "---"<< endl;
                 agendador->processar();
+                cout << endl;
             }
         }
-
     }
-
     return 0;
 }
