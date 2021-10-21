@@ -18,8 +18,6 @@ class Agendador
         void processar();
         int getInstante();
 
-        void imprimirEventos();
-
     private:
         Rede* rede;
         int tamanho;

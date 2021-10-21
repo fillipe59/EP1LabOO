@@ -13,10 +13,8 @@ Agendador::~Agendador() {
 }
 
 bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
-    if (quantidade >= tamanho){
-        cout << "overflow";
+    if (quantidade >= tamanho)
         return false;
-    }
 
     else {
         eventosAgendados[quantidade] = new Evento(instante, r, d);
@@ -25,45 +23,20 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
     }
 }
 
-void Agendador::imprimirEventos(){
-    for (int i = 0; i < quantidade; i++){
-        cout <<  "evento de numero:"<< i << endl;
-        eventosAgendados[i]->imprimir();
-    }
-}
-
 void Agendador::processar(){
-    /*
-    cout << "antes do instante" << instanteAtual <<endl;
-    for (int i = 0; i < quantidade; i++){
-    cout <<  "evento de numero:"<< i << endl;
-    eventosAgendados[i]->imprimir();
-    }
-    */
-
     for (int i = 0; i < quantidade ; i++) {
         if (instanteAtual == eventosAgendados[i]->getInstante()) {
             eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama());
-
-            for (int u = i; u < quantidade - 1; u++){
+            delete eventosAgendados[i];
+            for (int u = i; u < quantidade - 1; u++)
                 eventosAgendados[u] = eventosAgendados[u+1];
-            }
             i--;
-
             quantidade--;
         }
     }
 
-    /*
-    cout << "enviados para os roteadores no instan" << instanteAtual <<endl;
-    for (int i = 0; i < quantidade; i++){
-    cout <<  "evento de numero:"<< i << endl;
-    eventosAgendados[i]->imprimir();
-    }
-    */
-
     Evento *nullOuEvento = NULL;
-    for (int i = 0; i < rede->getQuantidade(); i++){
+    for (int i = 0; i < rede->getQuantidade(); i++) {
         nullOuEvento = rede->getRoteadores()[i]->processar(instanteAtual);
         if (nullOuEvento != NULL){
             agendar(nullOuEvento->getInstante(), nullOuEvento->getDestino(), nullOuEvento->getDatagrama());
