@@ -22,7 +22,8 @@ Datagrama* Evento::getDatagrama() {
 void Evento::imprimir()
 {
     cout << "Instante: " << instante << endl;
-    cout << "Roteador de destino: " << roteadorDestino << "recebeu o datagrama" << d->getDado() << endl;
+    cout << "Roteador de destino: " << roteadorDestino->getEndereco() << endl;
+    cout <<  d->getDado() << endl;
 
 }
 

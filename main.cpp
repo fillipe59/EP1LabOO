@@ -94,6 +94,7 @@ int main() {
             cout << endl;
 
             for (int tempo = 1; tempo <= qtdDeTempo; tempo++){
+                //agendador->imprimirEventos();
                 cout << "Instante " << agendador->getInstante() << endl;
                 cout  << "---"<< endl;
                 agendador->processar();

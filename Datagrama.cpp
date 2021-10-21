@@ -8,8 +8,7 @@ Datagrama::Datagrama(int origem, int destino, string dado) :
     origem(origem), destino(destino), dado(dado){}
 
 Datagrama::~Datagrama() {
-    //para fins de teste
-    cout << "Datagrama destruido" << endl;
+
 }
 
 int Datagrama::getOrigem() {
