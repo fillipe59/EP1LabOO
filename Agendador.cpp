@@ -25,20 +25,20 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d) {
 
 void Agendador::processar(){
     for (int i = 0; i < quantidade ; i++) {
-        if (instanteAtual == eventosAgendados[i]->getInstante()) {
-            eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama());
+        if (instanteAtual == eventosAgendados[i]->getInstante()) { //verifica se o evento esta agendado para o instante atual
+            eventosAgendados[i]->getDestino()->receber(eventosAgendados[i]->getDatagrama()); //o roteador de destino do evento recebe o datagrama
             delete eventosAgendados[i];
-            for (int u = i; u < quantidade - 1; u++)
+            for (int u = i; u < quantidade - 1; u++) //desloca todos os eventos seguintes para eliminar o "buraco" criado ao se ler o evento
                 eventosAgendados[u] = eventosAgendados[u+1];
-            i--;
+            i--; //volta-se uma posicao para ler-se os eventos deslocados
             quantidade--;
         }
     }
 
     Evento *nullOuEvento = NULL;
     for (int i = 0; i < rede->getQuantidade(); i++) {
-        nullOuEvento = rede->getRoteadores()[i]->processar(instanteAtual);
-        if (nullOuEvento != NULL){
+        nullOuEvento = rede->getRoteadores()[i]->processar(instanteAtual); //chama o metodo processar de cada um dos roteadores da rede
+        if (nullOuEvento != NULL){ //caso o processar retorne um evento, ele eh agendado
             agendar(nullOuEvento->getInstante(), nullOuEvento->getDestino(), nullOuEvento->getDatagrama());
         }
     }

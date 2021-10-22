@@ -9,10 +9,8 @@
 using namespace std;
 
 int main() {
-
     Rede *rede = new Rede (6);
     Agendador *agendador = new Agendador(1, rede, 10);
-
 
     Roteador *r1 = new Roteador(1);
     Roteador *r2 = new Roteador(2);
@@ -53,7 +51,7 @@ int main() {
 
     int comando = 4;
 
-    while (comando != 0){
+    while (comando != 0) {
 
         cout<< "Simulador de Rede" << endl;
         cout<< "1) Enviar um datagrama" << endl;
@@ -64,7 +62,7 @@ int main() {
         cin >> comando;
         cout << endl;
 
-        if (comando == 1){
+        if (comando == 1) {
             cout << "Endereco do roteador de origem: ";
             cin >>  enderecoOrigem;
 
@@ -88,7 +86,7 @@ int main() {
             }
         }
 
-        if (comando == 2){
+        if (comando == 2) {
             cout << "Quantidade de tempo: ";
             cin >> qtdDeTempo;
             cout << endl;
@@ -102,6 +100,14 @@ int main() {
             }
         }
     }
+
+    delete rede;
+    delete agendador;
+    delete &enderecoOrigem;
+    delete &enderecoDestino;
+    delete &mensagem;
+    delete &qtdDeTempo;
+    delete &comando;
 
     return 0;
 }
