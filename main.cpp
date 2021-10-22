@@ -103,11 +103,6 @@ int main() {
 
     delete rede;
     delete agendador;
-    delete &enderecoOrigem;
-    delete &enderecoDestino;
-    delete &mensagem;
-    delete &qtdDeTempo;
-    delete &comando;
 
     return 0;
 }
