@@ -80,7 +80,7 @@ int main() {
                 cout <<  "Erro: origem desconhecida" << endl;
                 cout << endl;
             }
-            if (!agendador->agendar(instante, rede->getRoteador(enderecoOrigem), new Datagrama(enderecoOrigem, enderecoDestino, mensagem))) {
+            else if (!agendador->agendar(instante, rede->getRoteador(enderecoOrigem), new Datagrama(enderecoOrigem, enderecoDestino, mensagem))) {
                 cout << "Erro: Sem espaco para agendar o evento" <<  endl;
                 cout << endl;
             }
@@ -92,7 +92,6 @@ int main() {
             cout << endl;
 
             for (int tempo = 1; tempo <= qtdDeTempo; tempo++){
-                //agendador->imprimirEventos();
                 cout << "Instante " << agendador->getInstante() << endl;
                 cout  << "---"<< endl;
                 agendador->processar();
